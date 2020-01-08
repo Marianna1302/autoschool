@@ -22,4 +22,3 @@ practice_block.onclick = function () {
         practice.style.display = "none";
     }
 }
-

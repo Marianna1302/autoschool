@@ -11,6 +11,17 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color:black;
+}
+
+a:hover {
+    transition: 1s;
+    color: #d12626;
+    cursor: pointer;
+    font-size: 28px;
+}
 
 #logo {
     display: flex;
@@ -36,7 +47,7 @@ body {
     font-weight: bold;
     font-size: 52px;
     position: absolute;
-    top:230px;
+    top:295px;
     left:150px;
     right:150px;
 }
@@ -74,10 +85,20 @@ body {
 li {
     list-style: none;
     padding: 0 30px;
-    font-size: 18px;
+    font-size: 21px;
     font-weight: bold;
-
+    padding: 10px 30px;
 }
+
+.menu li:last-child {
+    border-right: none;
+}
+
+.menu li {
+    border-right: black solid 2px;
+}
+
+
 
 #price {
     display: flex;
@@ -92,8 +113,8 @@ li {
     flex-wrap: wrap;
 }
 
-#navigation{
-    padding-left: 55px;
+#navigation, #logo{
+    margin:auto;
 }
 
 #header-top, #navigation ul {
@@ -257,6 +278,19 @@ footer p {
     padding: 3px;
 }
 
+.flex-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.place {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
 
 @media (min-width:1600px) and (max-width: 1800px) {
     .moto{
@@ -296,12 +330,19 @@ footer p {
 }
 
 @media (min-width:1200px) and (max-width: 1400px) {
+    a:hover {
+        transition: 1s;
+        color: #d12626;
+        cursor: pointer;
+        font-size: 20px;
+    }
 
     .container {
         padding: 0 40px;
     }
     .moto{
         font-size: 28px;
+        top:200px;
     }
 
     .moto-2 {
@@ -362,6 +403,13 @@ footer p {
 }
 
 @media (min-width:1000px) and (max-width: 1200px) {
+    a:hover {
+        transition: 1s;
+        color: #d12626;
+        cursor: pointer;
+        font-size: 15px;
+    }
+
     .container {
         margin:0 40px;
     }
@@ -472,6 +520,13 @@ footer p {
 }
 
 @media (min-width:800px) and (max-width: 999px) {
+    a:hover {
+        transition: 1s;
+        color: #d12626;
+        cursor: pointer;
+        font-size: 15px;
+    }
+
     .container {
         margin:0 40px;
     }
@@ -596,9 +651,20 @@ footer p {
     footer p {
         font-size: 20px;
     }
+
+    .place {
+        font-size: 20px;
+    }
 }
 
 @media (min-width:600px) and (max-width: 799px) {
+    a:hover {
+        transition: 1s;
+        color: #d12626;
+        cursor: pointer;
+        font-size: 11px;
+    }
+
     .container {
         margin:0 40px;
     }
@@ -733,9 +799,24 @@ footer p {
     footer p {
         font-size: 20px;
     }
+
+    iframe {
+        width: 550px;
+        height:275px;
+    }
+
+    .place {
+        font-size: 18px;
+    }
 }
 
 @media (min-width:400px) and (max-width: 599px) {
+    a:hover {
+        transition: 1s;
+        color: #d12626;
+        cursor: pointer;
+        font-size: 11px;
+    }
     .container {
         margin:0 20px;
     }
@@ -893,9 +974,24 @@ footer p {
     footer p {
         font-size: 14px;
     }
+
+    iframe {
+        width: 350px;
+        height: 250px;
+    }
+
+    .place {
+        font-size: 15px;
+    }
 }
 
 @media (min-width:320px) and (max-width: 399px) {
+    a:hover {
+        transition: 1s;
+        color: #d12626;
+        cursor: pointer;
+        font-size: 11px;
+    }
     .container {
         margin:0 10px;
     }
@@ -1051,5 +1147,14 @@ footer p {
 
     footer p {
         font-size: 12px;
+    }
+    
+    iframe {
+        width: 310px;
+        height: 200px;
+    }
+
+    .place {
+        font-size: 13px;
     }
 }
